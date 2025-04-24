@@ -7,14 +7,14 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: zoexCode
+author: John Doe
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -96,16 +96,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: 3-hexo
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Zoexcode/zoexcode.github.io
-  branch: gh-pages  # 专门存放生成的静态文件
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
-
-search:
-   path: search.xml
-   field: post
+  type: ''
